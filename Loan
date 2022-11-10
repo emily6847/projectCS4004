@@ -1,3 +1,4 @@
+import java.util.LocalDate;
 public class LoanManage {
 
     public static String trace(String profile) { //RQ
@@ -18,6 +19,10 @@ public class LoanManage {
         }
         return profile;
     }
+    public static boolean fine( LocalDate dd/mm/yyyy){
+    return true;
+    }
 }
+
 
 

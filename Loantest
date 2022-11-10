@@ -10,6 +10,9 @@ class LoanManageTest {
                 LoanManage.trace("Mary Last" + "21354"+ "0864572934") );
     }
 
-
+@Test
+void isFineNeeded(){
+assertTrue(LoanManage.fine(12,4,2022));
+}
 
 }
