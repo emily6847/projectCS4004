@@ -1,0 +1,31 @@
+package org.example;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class UsernameTest {
+    @Test
+    void lessThan10Characters() { //RQ
+        assertTrue(username.lessThanTen("becQuinn"));
+    }
+
+    @Test
+    void moreThan18Characters(){ //RQ
+        assertTrue(username.moreThan18("BeckyQuinnEmilyWalsh"));
+    }
+    @Test
+    void capAtThestart(){ //RQ
+        assertTrue(username.CapStart("Caoimhe"));
+    }
+
+    @Test
+    void noName() { //RQ
+        assertTrue(username.EmptyName(""));
+    }
+
+    @Test
+    void number(){ //RQ
+        assertTrue(username.HasNumber("Beckyquinn1"));
+    }
+
