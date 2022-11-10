@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-public class Book { hello
+public class Book {
 
     public static double bookID(double id) { //RQ
         return id;
@@ -133,3 +133,23 @@ public class Book { hello
         return false;
     }
 }
+
+public static String matchgenre(String genre) { //EW
+        String[] genres = new String []{"Fiction", "romance", "mystery"};
+        for (int i =0; i<genres.length; i++){
+            if (genres[i] == genre) {
+                return genre;
+            }
+        }
+        return null;
+    }
+
+    public static String Location(String location) { //EW
+        String[] locations = new String []{"Science Department", "Education", "maths department"};
+        for (int i = 0; i<locations.length; i++){
+            if (locations[i] == location) {
+                return location;
+            }
+        }
+        return null;
+    }
