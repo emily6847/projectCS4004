@@ -44,7 +44,7 @@ class BookTest {
     }
     
     @Test
-    void ebookandBook(){
+    void ebookandBook(){ //CC
         assertTrue(Book.eBBook("Maze Runner"));
     }
 }
