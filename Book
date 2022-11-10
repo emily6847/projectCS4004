@@ -1,0 +1,111 @@
+import org.junit.jupiter.api.Test;
+
+import java.util.Arrays;
+
+public class Book {
+
+    public static double bookID(double id) { //RQ
+        return id;
+    }
+
+    @Test
+    public static String searchb(String book) { //RQ
+        String[] books = new String[]{"The Book", "Book", "MarioMan", "The movie"};
+
+        for (int i = 0; i < books.length; i++) {
+            if (books[i].equals(book)) {
+                return book;
+            }
+        }
+        return null;
+    }
+    public static String eBook(String book) { //RQ
+        String[] eBooks = new String[]{"Harry Potter", "The Maze Runner", "Captain Underpants", "The NoteBook"};
+        for (String eBook : eBooks) {
+            if (eBook.equals(book)) {
+                return book;
+            }
+        }
+        return null;
+    }
+    public static String MatchAuthor(String author) { //CC
+        String[] authors = new String[]{"Rowling", "Wilson", "Grant", "Ahern", "Stoker", "Clarke"};
+        for (int i = 0; i < authors.length; i++) {
+            if (authors[i].equals(author)) {
+                return author;
+            }
+        }
+        return null;
+    }
+
+
+    @Test
+    public static String getIndex(String index) { //RQ
+        return index;
+
+    }
+
+    public static boolean bookduplicate(String book) { //RQ
+        int count = 0;
+        String[] dup = new String[]{"The Times", "Mary", "Deep blue sea", "Monsters ink", "The Times"};
+        for (String s : dup) {
+            if (s.equals(book)) {
+                count++;
+            } else {
+            count=count;}
+            if (count > 1) {
+                return true;
+
+            }
+        }
+        return false;
+    }
+
+    public static boolean Relevant(String ScienceBook) { //RQ
+        String[] ScienceDep = new String[]{"World Of Science", "Human Lifecycle", "Atoms", "Chemicals"};
+        String[] MathDep = new String[]{"World Of Science", "Equations", "Multiplication", "Pythagoras"};
+        String[] LanguagesDep = new String[]{"World of languages", "English", "French", "Chinese"};
+        String[] EnglishDep = new String[]{"English", "Quotes", "Poems", "Essays"};
+
+        int count = 0;
+
+        for (int i = 0; i < ScienceDep.length; i++) {
+            if (ScienceDep[i].equals(ScienceBook)) {
+                count++;
+            } else {
+                count = count;
+            }
+            for (i = 0; i < MathDep.length; i++) {
+                if (MathDep[i].equals(ScienceBook)) {
+                    count++;
+                } else {
+                    count = count;
+                }
+            }
+
+            for (i = 0; i < LanguagesDep.length; i++) {
+                if (LanguagesDep[i].equals(ScienceBook)) {
+                    count++;
+                } else {
+                    count = count;
+                }
+            }
+
+
+            for (i = 0; i < EnglishDep.length; i++) {
+                if (EnglishDep[i].equals(ScienceBook)) {
+                    count++;
+                } else {
+                    count = count;
+                }
+            }
+
+
+            if (count > 1) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+}
