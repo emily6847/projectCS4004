@@ -1,0 +1,46 @@
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+class BookTest {
+    @Test
+    void matchBook() { //RQ
+        assertEquals(2.13, Book.bookID(2.13));
+    }
+
+    @Test
+    void findBook() { //RQ
+        assertEquals("MarioMan", Book.searchb("MarioMan"));
+        assertNotEquals("The M", Book.searchb("The M"));
+    }
+
+    @Test
+    void indexofBook() { //RQ
+        assertEquals("1A22", Book.getIndex("1A22"));
+    }
+
+
+    @Test
+    void duplication() { //RQ
+        assertTrue(Book.bookduplicate("The Times"));
+        assertFalse(Book.bookduplicate("Becky & Caoimhe"));
+        assertEquals(true, Book.bookduplicate("The Times"));
+    }
+
+    @Test
+    void isBookrelevantMorethanOne() { //RQ
+        assertTrue(Book.Relevant("World Of Science"));
+    }
+
+    @Test
+    void AuthorMatch() { //CC
+        assertEquals(("Clarke"), Book.MatchAuthor("Clarke"));
+    }
+
+    @Test
+    void eBook() { //CC
+        assertEquals(("Harry Potter"), Book.eBook("Harry Potter"));
+        assertNotEquals(("Harry"), Book.eBook("Harry"));
+    }
+}
+
