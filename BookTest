@@ -47,5 +47,17 @@ class BookTest {
     void ebookandBook(){ //CC
         assertTrue(Book.eBBook("Maze Runner"));
     }
+
+    @Test
+    void MathchesGenre(){ //EW
+
+    assertEquals(("Fiction"), Book.matchgenre("Fiction"));
+    }
+
+    @Test
+    void location(){ //EW
+
+    assertEquals(("maths department"), Book.Location("maths department"));
+    }
 }
 
