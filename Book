@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-public class Book { hello
+public class Book {
 
     public static double bookID(double id) { //RQ
         return id;
