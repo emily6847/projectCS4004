@@ -1,0 +1,50 @@
+package org.example;
+
+public class username {
+
+    public static boolean lessThanTen(String name) { //RQ
+        if (name.length() < 10) {
+            return true;
+
+        } else {
+            return false;
+
+        }
+    }
+
+
+    public static boolean moreThan18(String name) { //RQ
+        if (name.length() > 18) {
+            return true;
+
+        } else {
+            return false;
+
+        }
+    }
+
+    public static boolean CapStart(String name) { //RQ
+        if (Character.isUpperCase(name.charAt(0))) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+    public static boolean EmptyName(String name) { //RQ
+        return name.length() == 0;
+    }
+
+    public static boolean HasNumber(String name) { //RQ
+        int count=0;
+        for (int i = 0; i < name.length(); i++) {
+            if (Character.isDigit(name.charAt(i))) {
+                count++;
+            }else count = count;
+            } if (count >0){
+                return true;
+            }else{return false;
+
+}
+    }}
