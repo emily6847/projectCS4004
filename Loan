@@ -1,0 +1,23 @@
+public class LoanManage {
+
+    public static String trace(String profile) { //RQ
+        String[] accounts = new String[]{
+                "Mary Last" + "21354" + "0864572934",
+                "Peter First" + "29574" + "0679572934",
+                "Leo Lee" + "317854" + "0889462934",
+                "Lisa Pippet" + "29054" + "0862748934",
+                "Niall Cooney" + "27354" + "0862846934"};
+        for (int i = 0; i < accounts.length; i++) {
+            if (accounts[i] == profile) {
+                return profile;
+
+
+            } else {
+                throw new NullPointerException();
+            }
+        }
+        return profile;
+    }
+}
+
+
