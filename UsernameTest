@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class UsernameTest {
+String one;
+}
     @Test
     void lessThan10Characters() { //RQ
         assertTrue(username.lessThanTen("becQuinn"));
@@ -28,4 +30,8 @@ class UsernameTest {
     void number(){ //RQ
         assertTrue(username.HasNumber("Beckyquinn1"));
     }
+      @Test
+        void MoreThan10Characters() { //RQ
+            assertTrue(username.MoreThanTen("beckyQuinnn"));
+        }
 
