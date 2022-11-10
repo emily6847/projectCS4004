@@ -42,5 +42,10 @@ class BookTest {
         assertEquals(("Harry Potter"), Book.eBook("Harry Potter"));
         assertNotEquals(("Harry"), Book.eBook("Harry"));
     }
+    
+    @Test
+    void ebookandBook(){
+        assertTrue(Book.eBBook("Maze Runner"));
+    }
 }
 
