@@ -57,4 +57,13 @@ public class username {
 
             }
         }
+        public static boolean Space(String name) { //CC
+        String nam = (" ");
+        for (int i = 0; i < name.length(); i++){
+            if (nam.contains(Character.toString(name.charAt(i)))){
+                return false;
+            }
         }
+        return true;
+    } 
+     }
