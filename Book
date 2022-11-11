@@ -59,10 +59,29 @@ public class Book {
         }
 
 
-    @Test
-    public static String getIndex(String index) { //RQ
-        return index;
+     public static int findIndexWithTitle(String title) {//AK
+            //String authors[] = new String[] {"Jk Rowling", "Stephen King"};
+            String Titles[] = new String [] {"Harry Potter", "Fairy Tale"};
+            int Idexx[]= new int[] {123,365} ;
+            int index=0;
+        for(int i = 0;i<Titles.length;i++) {
+            if (Titles[i].equals(title)) {
+                index = Idexx[i];
+            }
+        }
+           return index;
 
+            }
+    public static String findAuthorFromTitle(String title){//AK
+        String authors[] = new String[] {"Jk Rowling", "Stephen King"};
+        String Titles[] = new String [] {"Harry Potter", "Fairy Tale"};
+        String author="";
+        for(int i = 0;i<Titles.length;i++) {
+            if (Titles[i].equals(title)) {
+                author=authors[i];
+            }
+        }
+        return author;
     }
 
     public static boolean bookduplicate(String book) { //RQ
