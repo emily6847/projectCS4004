@@ -34,4 +34,8 @@ String one;
         void MoreThan10Characters() { //RQ
             assertTrue(username.MoreThanTen("beckyQuinnn"));
         }
+@Test
+    void Space(){ //CC
 
+        assertTrue(Username.Space("CaoimheCahill"));
+    }
