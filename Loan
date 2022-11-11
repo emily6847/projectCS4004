@@ -1,4 +1,5 @@
 import java.util.LocalDate;
+import java.time.temporal.ChronoUnit;
 public class LoanManage {
 
     public static String trace(String profile) { //RQ
@@ -20,20 +21,18 @@ public class LoanManage {
         return profile;
     }
         public static boolean isFineNeeded( LocalDate dd){//AK
-            LocalDate current = LocalDate.now();
-            Period age = Period.between(current,dd);
-            int d= age.getDays();
-           // if(d<0) {
-           //     d = -d;
-            //}
+                LocalDate current = LocalDate.now();
+                long noOfDaysBetween = ChronoUnit.DAYS.between(dd, current);
 
-            if(d >30){
-                return true;
 
-            }
-            else {
-                return false;
-            }
+
+                if(noOfDaysBetween >30){
+                    return true;
+
+                }
+                else {
+                    return false;
+                }
 }
 
 
