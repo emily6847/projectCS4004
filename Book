@@ -153,4 +153,24 @@ public static String matchgenre(String genre) { //EW
         }
         return null;
     }
+        public static String getlocationfromTitle(String title) {//ew
+                String locations[] = new String [] {"Maths Department","Science Department","Physcology"};
+                String Titles [] = new String [] {"Geometry", "biology", "Life"};
+                String location = "";
+                for(int i =0; i< Titles.length; i++){
+                    if(Titles[i].equals(title)) {
+                        location = locations[i];
+                    }
+                } return location;
+            }
 
+            public static String getgenrefromTitle(String title) { //ew
+                String genres[] = new String [] {"Fiction","Non Fiction","Mystery"};
+                String Titles [] = new String [] {"To Kill A MockingBird", "Diary of Anne Frank", "Gone Girl"};
+                String genre = "";
+                for(int i =0; i< Titles.length; i++){
+                    if(Titles[i].equals(title)) {
+                        genre = genres[i];
+                    }
+                } return genre;
+            }
