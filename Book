@@ -172,5 +172,6 @@ public static String matchgenre(String genre) { //EW
                     if(Titles[i].equals(title)) {
                         genre = genres[i];
                     }
-                } return genre;
+                }
+                return genre;
             }
