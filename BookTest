@@ -3,10 +3,10 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookTest {
-    @Test
-    void matchBook() { //RQ
-        assertEquals(2.13, Book.bookID(2.13));
-    }
+      @Test
+        void matchBook() { //RQ
+            assertEquals("13476", Book.bookID("The Book"));
+        }
 
     @Test
     void findBook() { //RQ

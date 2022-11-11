@@ -4,9 +4,18 @@ import java.util.Arrays;
 
 public class Book {
 
-    public static double bookID(double id) { //RQ
-        return id ;
-    }
+    public static String bookID(String title) {//RQ
+            String[] books = new String[]{"The Book", "Book", "MarioMan", "The movie"};
+            String[] id = new String[]{"13476", "12764", "89365", "83719"};
+
+            for (int i = 0; i < books.length; i++) {
+                if (books[i].equals(title)) {
+                    return id[i];
+
+                }
+            }
+            return title;
+        }
 
     @Test
     public static String searchb(String book) { //RQ
