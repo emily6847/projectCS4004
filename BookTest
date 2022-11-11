@@ -70,5 +70,6 @@ class BookTest {
             assertEquals("Fiction", Book.getgenrefromTitle("To Kill A MockingBird"));
 
         }
+
 }
 
