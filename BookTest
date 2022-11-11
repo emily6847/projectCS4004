@@ -14,10 +14,15 @@ class BookTest {
         assertNotEquals("The M", Book.searchb("The M"));
     }
 
-    @Test
-    void indexofBook() { //RQ
-        assertEquals("1A22", Book.getIndex("1A22"));
-    }
+     @Test
+        void indexOfBook(){//AK
+    assertEquals(123,Book.findIndexWithTitle("Harry Potter"));
+        }
+
+        @Test
+        void findAuthor(){//AK
+            assertEquals("Jk Rowling",Book.findAuthorFromTitle("Harry Potter"));
+        }
 
 
     @Test

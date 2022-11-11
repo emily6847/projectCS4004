@@ -19,9 +19,21 @@ public class LoanManage {
         }
         return profile;
     }
-    public static boolean fine( LocalDate dd/mm/yyyy){
-    return true;
-    }
+        public static boolean isFineNeeded( LocalDate dd){//AK
+            LocalDate current = LocalDate.now();
+            Period age = Period.between(current,dd);
+            int d= age.getDays();
+           // if(d<0) {
+           //     d = -d;
+            //}
+
+            if(d >30){
+                return true;
+
+            }
+            else {
+                return false;
+            }
 }
 
 

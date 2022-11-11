@@ -11,8 +11,7 @@ class LoanManageTest {
     }
 
 @Test
-void isFineNeeded(){
-assertTrue(LoanManage.fine(12,4,2022));
-}
-
+    void ThirtyOneDaysTest(){//AK
+    assertTrue(LoanManagement.isFineNeeded(LocalDate.parse("2022-10-10")));
+    }
 }
