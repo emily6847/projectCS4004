@@ -38,6 +38,17 @@ public class Book {
         return null;
     }
 
+    public static String eBook(String book) { //CC
+            String[] eBooks = new String[]{"Harry Potter", "The Maze Runner", "Captain Underpants", "The NoteBook"};
+            for (int i = 0; i < eBooks.length; i++) {
+                if (eBooks[i] == book) {
+                    return book;
+                }
+
+            }
+            return null;
+        }
+
 
     @Test
     public static String getIndex(String index) { //RQ
