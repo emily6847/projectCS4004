@@ -28,4 +28,9 @@ class UsernameTest {
     void number(){ //RQ
         assertTrue(username.HasNumber("Beckyquinn1"));
     }
+@Test
+    void Space(){ //CC
 
+        assertTrue(Username.Space("CaoimheCahill"));
+    }
+    }
