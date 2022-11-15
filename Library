@@ -1,0 +1,24 @@
+package org.example;
+
+public class Library {
+
+    public static boolean isAvailable(String title){
+        String books[] = new String[] {"Harry Potter", "Titanic", "Fairy Tale", "Alice in Wonderland"};
+        String onLoan[] = new String[] {"Titanic", "Harry Potter"};
+        String reserved[] = new String[] {"Fairy Tale"};
+        Boolean available= true;
+
+            for(int j=0; j< onLoan.length;j++){
+                if(title.equals(onLoan[j])){
+                    available=false;
+                }
+            }
+            for(int k=0; k< reserved.length; k++){
+                if(title.equals(reserved[k])){
+                    available=false;
+                }
+            }
+
+        return available;
+    }
+}

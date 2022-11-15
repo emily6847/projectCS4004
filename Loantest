@@ -10,6 +10,8 @@ class LoanManageTest {
                 LoanManage.trace("Mary Last" + "21354"+ "0864572934") );
     }
 
-
-
+@Test
+    void ThirtyOneDaysTest(){//AK
+    assertTrue(LoanManagement.isFineNeeded(LocalDate.parse("2022-10-10")));
+    }
 }

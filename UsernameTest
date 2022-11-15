@@ -8,11 +8,13 @@ class UsernameTest {
     @Test
     void lessThan10Characters() { //RQ
         assertTrue(username.lessThanTen("becQuinn"));
+        assertFalse(Username.lessThanTen("abbiekeat12"));
     }
 
     @Test
     void moreThan18Characters(){ //RQ
         assertTrue(username.moreThan18("BeckyQuinnEmilyWalsh"));
+         assertFalse(Username.moreThan18("Abcderufhsnlorghy"));
     }
     @Test
     void capAtThestart(){ //RQ
@@ -28,4 +30,9 @@ class UsernameTest {
     void number(){ //RQ
         assertTrue(username.HasNumber("Beckyquinn1"));
     }
+@Test
+    void Space(){ //CC
 
+        assertTrue(Username.Space("CaoimheCahill"));
+    }
+    }
