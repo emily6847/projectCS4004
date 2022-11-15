@@ -24,7 +24,6 @@ class BookTest {
             assertEquals("Jk Rowling",Book.findAuthorFromTitle("Harry Potter"));
         }
 
-
     @Test
     void duplication() { //RQ
         assertTrue(Book.bookduplicate("The Times"));
