@@ -73,7 +73,6 @@ class BookTest {
         @Test
         void genreofBook(){ //ew
             assertEquals("Fiction", Book.getgenrefromTitle("To Kill A MockingBird"));
-
         }
 }
 
